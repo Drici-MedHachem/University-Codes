@@ -2,8 +2,7 @@
 #include<stdlib.h>
 
 int main(void) {
-	if(!NULL) {
-		printf("Hello World");
-	}
+	char* str = "some string bro";
+	puts(str);
 	return 0;
 }
