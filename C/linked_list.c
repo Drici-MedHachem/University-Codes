@@ -24,7 +24,12 @@ void insert_after(node * t,int key_) {
 	x-> next = t->next;
 	t-> next = x;
 }
-
+/*
+ * to implement a circular linked list all you need to do is to first create a core
+ * node x and then create a pointer t that points to it and each time create a next 
+ * pointer to t , move to it and put the key depending on how many nodes you got
+ * once this is done put the next of the last t back to the core x 
+ */ 
 
 int main(void) {
 	
