@@ -44,7 +44,7 @@ void insert(int key_) {
 }
 
 int isempty(void) {
-	return !(tail == head);
+	return tail == head;
 }
 
 void free(void) {
