@@ -5,17 +5,19 @@ typedef struct node {
 	int key;
 	struct node * next;
 }node;
-
+static node  * head , *z;
 node * init_list(void) {
-	node * head = malloc(sizeof(*head));
-	node * z malloc(sizeof(*z));
+	head = malloc(sizeof(*head));
+	z malloc(sizeof(*z));
 	head-> next = z;
 	z->next = z;
 	return head;
 }
 
 void delete_after(node * t) {
-	t->next = t-> next-> next
+	node * x = t->next;
+	t->next = t-> next-> next;
+	free(x);
 }
 
 void insert_after(node * t,int key_) {
@@ -43,6 +45,8 @@ void exchange(node * u , node * v) {
 	x->next = y->next;
 	y->next = temp;
 }
+
+
 /*
  * to implement a circular linked list all you need to do is to first create a core
  * node x and then create a pointer t that points to it and each time create a next 
