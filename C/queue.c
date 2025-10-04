@@ -6,7 +6,7 @@ typedef struct node* {
 	struct node * next;
 }node;
 
-static node * head , tail, z , t;
+static node * head , *tail, *z , *t;
 
 
 void initqueue() {
