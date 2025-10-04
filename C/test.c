@@ -8,10 +8,25 @@
 
 
 int main(void) {
-	int a = 5;
-	int *p = &a;
-	int ** pp = &p;
-	printf("%p \n",p);
-	printf("%p \n",&a);
+	int mat[5][6];
+	int i,j;
+	int val = 0;
+	for(i = 0 ; i < 5 ; i++) {
+		for( j = 0 ; j < 6 ; j++) {
+			mat[i][j] = val++;
+		}
+	}
+	
+	int *pptr = (int*) mat;
+	for(i = 0 ; i < 5 ; i++) {
+		for( j = 0 ; j < 6 ; j++) {
+			printf("%d ",mat[i][j]);
+		}
+		putchar('\n');
+	}
+	
+	for(i = 0 ; i < 5*6 ; i++) {
+		printf("%d ", pptr[i]);
+	}
 	return 0;
 }
