@@ -13,14 +13,3 @@ int is_pali(char str[], int left , int right) {
 	if(str[left] != str[right]) return 0;
 	return  is_pali(str , left + 1,right -1);
 }
-
-
-
-int main(void) {
-	char str[] = "Hello World!";
-		printf("%s \n", str);
-	right = sizeof(str)/sizeof(str[0]) - 2;
-	reverse(str);
-	printf("%s \n",str);
-	return 0;
-}
