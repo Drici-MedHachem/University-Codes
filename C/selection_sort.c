@@ -12,11 +12,11 @@ void swap(int arr[] ,int i,int j) {
 
 void selection_sort(int arr[] , int size) {
 	for(int valid_idx = 0 ; valid_idx < size-1 ; valid_idx++) {
-		int min_idx = valid_idx;
+		int min_idx = valid_idx; // set the index of min initially to the current index
 		for(int i = valid_idx +1  ; i < size ; i++)  {
-			if(arr[i] < arr[min_idx]) min_idx = i;
+			if(arr[i] < arr[min_idx]) min_idx = i; //find the index of the minimum value
 		}
-		if(min_idx != valid_idx) swap(arr,min_idx , valid_idx);
+		if(min_idx != valid_idx) swap(arr,min_idx , valid_idx); // if it changed then swap
 	}
 }
 

@@ -25,7 +25,6 @@ int main(void) {
 	
 	char * ptr_str = "Hello world!"; // a pointer to string literal that is read only
 									// this decays to ptr_str[0] = 'H'
-	char * ptr_char_str = "Hello world"; // a pointer to array of chars 
 	
 	char * words[] = {
 		"Hello",

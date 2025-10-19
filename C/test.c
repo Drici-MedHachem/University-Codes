@@ -1,26 +1,17 @@
-
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #include<limits.h>
 
 
-int left = 0;
-int right;
-
-int is_pali(char str[], int left , int right) {
-	if(left >= right) return 1;
-	if(str[left] != str[right]) return 0;
-	return  is_pali(str , left + 1,right -1);
-}
-
 
 
 int main(void) {
-	char str[] = "Hello World!";
-		printf("%s \n", str);
-	right = sizeof(str)/sizeof(str[0]) - 2;
-	reverse(str);
-	printf("%s \n",str);
+	char str[] = "Chabiba we are doing good";
+	int len = 0;
+	while(str[len] != '\0') len++;
+	int size = strlen(str);
+	printf("%d \n",size);
+	printf("%d \n",len);
 	return 0;
 }
