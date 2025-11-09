@@ -4,14 +4,10 @@
 #include<limits.h>
 
 
-
-
 int main(void) {
-	char str[] = "Chabiba we are doing good";
-	int len = 0;
-	while(str[len] != '\0') len++;
-	int size = strlen(str);
-	printf("%d \n",size);
-	printf("%d \n",len);
-	return 0;
-}
+		int mat[5][5] = {0};
+		int * ptr = mat;
+		int * _ptr = &mat[0];
+		printf("%p \n %p",ptr,_ptr);
+		
+} 

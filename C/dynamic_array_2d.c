@@ -1,4 +1,3 @@
-/* Program 9.2 from PTRTUT10.HTM   6/13/97 */
 
 #include <stdio.h>
 #include <stdlib.h>

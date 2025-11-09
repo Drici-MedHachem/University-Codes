@@ -1,14 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//make the whole datatype of a node as a struct
 typedef struct node {
 	int key;
 	struct node * next;
 }node;
+
+
 static node  * head , *z;
 node * init_list(void) {
 	head = malloc(sizeof(*head));
-	z malloc(sizeof(*z));
+	z  = malloc(sizeof(*z));
 	head-> next = z;
 	z->next = z;
 	return head;
