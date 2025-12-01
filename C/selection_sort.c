@@ -23,5 +23,12 @@ void selection_sort(int arr[] , int size) {
 
 
 int main(void) {
+	int arr[] = {3,4,7,1,-1,-2};
+	int size = 6;
+	selection_sort(arr,size);
+	for(int i = 0 ; i < size ; i++) {
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
 	return 0;
 }

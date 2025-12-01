@@ -20,7 +20,7 @@ void initqueue() {
 
 
 void insert(int key_) {
-	t = malloc(sizeof(*t));
+	node * t = malloc(sizeof(*t));
 	t->key = key_;
 	t-> next = z;
 	tail-> next = t;
