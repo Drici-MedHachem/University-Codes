@@ -29,6 +29,14 @@ int main(void)
         if (row > 0)
         printf("              %d",(int)(rowptr[row] - rowptr[row-1]));
     }
+    
+    for(int i = 0 ; i < nrows ; i++) {
+		for(int j = 0 ; j < ncols ; j++) {
+			rowptr[i][j] = i*j;
+			printf("%d ",rowptr[i][j]);
+		}
+		printf("\n");
+	}
 
     return 0;
 }

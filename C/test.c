@@ -3,11 +3,31 @@
 #include<string.h>
 #include<limits.h>
 
+typedef struct node {
+	int key;
+	struct node * next;
+} node;
 
 int main(void) {
-		int mat[5][5] = {0};
-		int * ptr = mat;
-		int * _ptr = &mat[0];
-		printf("%p \n %p",ptr,_ptr);
-		
+	// quick sort
+	// reverse linked list
+	int n,m;
+	scanf("%d %d",&n,&m);
+	int ** arr = malloc(n * sizeof(*arr));
+	for(int i = 0 ; i < n ; i++) {
+		arr[i] = malloc(m * sizeof(**arr));
+	}
+	for(int i = 0 ; i < n ; i++) {
+		for(int j = 0 ; j < m ; j++) {
+			printf("arr[%d][%d] = ",i,j);
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	
+	for(int i = 0 ; i < n ; i++) {
+		for(int j = 0 ; j < m ; j++) {
+			printf("%d ",arr[i][j]);
+		}
+		printf("\n");
+	}
 } 

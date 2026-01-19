@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
+// time O(n^2)
+// space S(1) because it's in place sorting 
 
 void swap(int arr[] ,int i,int j) {
 	int t;

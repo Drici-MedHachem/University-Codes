@@ -7,7 +7,7 @@
  QNode * front;
  QNode * rear;
 }Queue;
-for this you just take Queue * Q and edit it as Q->front and Q-> rear and pass & Q
+for this you just take Queue * Q and edit it as Q->front and Q-> rear and pass & Q with Q = {NULL , NULL} at the start
 */
 typedef struct SNode {
 	char data;
