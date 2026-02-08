@@ -1,9 +1,3 @@
-vec = zeros(5,1)
-
-for i = 1:5
-  a = input("Enter a value ");
-  vec(i,1) = a;
-
-end
-
-vec
+A = [1,0,0;1,1,0;2,2,1];
+B = [1,2,-2;0,-1,3;0,0,-1];
+C = B * A
