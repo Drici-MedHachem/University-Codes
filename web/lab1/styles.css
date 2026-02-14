@@ -1,0 +1,22 @@
+.top {
+    text-align: center;
+}
+p {
+    font-size: 14px;
+}
+strong {
+    font-family: Cambria;
+    font-size: 16px;
+    color: green;
+}
+h3 {
+    color: red;
+}
+
+#personalimg {
+    background-image: url("web_pic.jpg");
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    float: right;
+}
