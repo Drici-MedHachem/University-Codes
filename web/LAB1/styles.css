@@ -1,20 +1,18 @@
-.top {
-    text-align: center;
+.style1 {
+    color:red;
 }
-p {
-    font-size: 14px;
-}
-strong {
+.style2 {
     font-family: Cambria;
     font-size: 16px;
     color: green;
 }
-h3 {
-    color: red;
+.style3 {
+    font-size: 14px;
 }
 
-#personalimg {
-    background-image: url("web_pic.jpg");
+
+.style4 {
+    background-image: url("pic.jpg");
     width: 250px;
     height: 250px;
     background-repeat: no-repeat;
