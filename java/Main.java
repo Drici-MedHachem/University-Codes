@@ -27,14 +27,14 @@ class Student {
         grade = grade_;
     }
     public void setAge(int age_) {
-        if(age > 5) {
+        if(age_ < 5) {
             System.out.println("Error: Age must be greater than 5 years!");
         } else {
             age  = age_;
         }
     }
     public void setGrade(double grade_) {
-        if(grade < 100 || grade > 0) {
+        if(grade_ > 100 || grade_ < 0) {
             System.out.println("Error: Grade must be between 0 and 100!");
         } else {
             grade = grade_;
