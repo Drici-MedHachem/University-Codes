@@ -78,7 +78,7 @@ if (isset($_POST['course'], $_POST['credits'], $_POST['grade'])) {
 <body>
     <h1>GPA Calculator</h1>
 
-    <form action="calculate.php" method="post" onsubmit="return validateForm();">
+    <form action="index.php" method="post" onsubmit="return validateForm();">
 
         <div id="courses">
             <div class="course-row">
