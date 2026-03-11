@@ -7,7 +7,9 @@ if (isset($_POST['course'], $_POST['credits'], $_POST['grade'])) {
 
     $totalPoints = 0;
     $totalCredits = 0;
-
+    echo '<head> 
+        <link rel="stylesheet" href="style.css">
+        </head>';
     echo "<table>";
     echo "<tr>
             <th> Course </th>
