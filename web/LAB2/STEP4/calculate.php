@@ -1,7 +1,7 @@
 <?php
 
 header('Content-Type: application/json');
-
+// $valid_courses = array('Operating Systems' , 'Data Bases' , 'Computer Netowrks' , 'Object Oriented Programming' , 'Language Theory' , 'Web Development');
 if (isset($_POST['course'], $_POST['credits'], $_POST['grade'])) {
 
     $courses = $_POST['course'];
