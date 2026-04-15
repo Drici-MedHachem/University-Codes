@@ -7,7 +7,7 @@ int main() {
     if(pid == 0) {
         printf("Child PID : %d \n", getpid());
     } else {
-        // wait(NULL);
+        wait(NULL);
         printf("Parent PID : %d \n", getpid());
     }
     return 0;

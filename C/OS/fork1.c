@@ -12,9 +12,5 @@ int main() {
         printf("I am the parent process \n");
         printf("PID parent : %d \n", getpid());
     }
-
-
-
-
     return 0;
 }

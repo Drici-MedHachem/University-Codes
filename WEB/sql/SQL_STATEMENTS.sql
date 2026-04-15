@@ -53,6 +53,11 @@ JOIN attributes_table a
 JOIN attributes_options_table o 
     ON va.option_id = o.option_id;
 
+
+
+
+
+
 -- LEFT JOIN: عرض كل المنتجات حتى التي لم تبع
 SELECT p.product_name, oi.order_item_id
 FROM product_table p
