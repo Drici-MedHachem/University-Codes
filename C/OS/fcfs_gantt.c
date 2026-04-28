@@ -84,51 +84,6 @@ void FCFS(process p[], int n) {
 }
 
 
-void SJF(process p[], int n) {
-    int time = 0;
-    int completed = 0;
-    int visited[MAX] = {0};
-
-    while (completed < n) {
-        int idx = -1;
-        int min_burst_time = 1e9;
-
-        for (int i = 0; i < n; i++) {
-            if (!visited[i] && p[i].arrival_time <= time) {
-                if (p[i].burst_time < min_burst_time) {
-                    min_burst_time = p[i].burst_time;
-                    idx = i;
-                }
-            }
-        }
-
-        if (idx == -1) {
-            // No process available → IDLE
-            int next_arrival = 1e9;
-            for (int i = 0; i < n; i++) {
-                if (!visited[i] && p[i].arrival_time < next_arrival) {
-                    next_arrival = p[i].arrival_time;
-                }
-            }
-
-            add_gantt(IDLE_PROC, time, next_arrival);
-            time = next_arrival;
-        } else {
-            add_gantt(p[idx].pid, time, time + p[idx].burst_time);
-
-            time += p[idx].burst_time;
-
-            p[idx].completion_time = time;
-            p[idx].turnaround_time = p[idx].completion_time - p[idx].arrival_time;
-            p[idx].waiting_time = p[idx].turnaround_time - p[idx].burst_time;
-
-            visited[idx] = 1;
-            completed++;
-        }
-    }
-}
-
-
 void display(process p[], int n) {
     int total_waiting_time = 0 , total_turnaround_time = 0;
 
